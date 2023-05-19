@@ -25,6 +25,8 @@
 		D57E79102A1769A700F35DFC /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E790F2A1769A700F35DFC /* ImageExtension.swift */; };
 		D57E79122A1769D100F35DFC /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E79112A1769D100F35DFC /* ViewExtension.swift */; };
 		D57E79142A1769DB00F35DFC /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E79132A1769DB00F35DFC /* ArrayExtension.swift */; };
+		D57E79162A17756700F35DFC /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E79152A17756700F35DFC /* NetworkMonitor.swift */; };
+		D57E79182A17776A00F35DFC /* BubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E79172A17776A00F35DFC /* BubbleShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		D57E790F2A1769A700F35DFC /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		D57E79112A1769D100F35DFC /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		D57E79132A1769DB00F35DFC /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		D57E79152A17756700F35DFC /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		D57E79172A17776A00F35DFC /* BubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				D57E790B2A17695700F35DFC /* NetworkTemp.swift */,
+				D57E79152A17756700F35DFC /* NetworkMonitor.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				D57E79032A17692C00F35DFC /* ReusableTemp.swift */,
+				D57E79172A17776A00F35DFC /* BubbleShape.swift */,
 			);
 			path = ReusableUI;
 			sourceTree = "<group>";
@@ -366,9 +372,11 @@
 				D57E790A2A17694E00F35DFC /* RoundedCorner.swift in Sources */,
 				D57E79082A17694400F35DFC /* ExtensionTemp.swift in Sources */,
 				D57E79042A17692C00F35DFC /* ReusableTemp.swift in Sources */,
+				D57E79182A17776A00F35DFC /* BubbleShape.swift in Sources */,
 				D57E79102A1769A700F35DFC /* ImageExtension.swift in Sources */,
 				D57E790E2A17698F00F35DFC /* ColorExtension.swift in Sources */,
 				D57E79142A1769DB00F35DFC /* ArrayExtension.swift in Sources */,
+				D57E79162A17756700F35DFC /* NetworkMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +463,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -509,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
