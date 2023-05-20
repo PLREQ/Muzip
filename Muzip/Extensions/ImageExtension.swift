@@ -9,7 +9,7 @@ import SwiftUI
 
 extension Image {
     enum ImageName: String {
-        case test = "test"
+        case muzipLogo = "MuzipLogo"
         
     }
     
