@@ -10,11 +10,15 @@
 		D53658C12A2490C900B484F9 /* CircleBeatAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53658C02A2490C900B484F9 /* CircleBeatAnimationView.swift */; };
 		D53658C32A2497C100B484F9 /* bottomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53658C22A2497C100B484F9 /* bottomSearchBar.swift */; };
 		D53658C72A24F4F800B484F9 /* WaveAnimaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53658C62A24F4F800B484F9 /* WaveAnimaion.swift */; };
+		A888B9452A18D2B400E89416 /* MusicDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888B9412A18D2B300E89416 /* MusicDB+CoreDataClass.swift */; };
+		A888B9462A18D2B400E89416 /* MusicDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888B9422A18D2B300E89416 /* MusicDB+CoreDataProperties.swift */; };
+		A888B9472A18D2B400E89416 /* PlayListDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888B9432A18D2B300E89416 /* PlayListDB+CoreDataClass.swift */; };
+		A888B9482A18D2B400E89416 /* PlayListDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888B9442A18D2B300E89416 /* PlayListDB+CoreDataProperties.swift */; };
 		D57E78CC2A17680A00F35DFC /* MuzipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E78CB2A17680A00F35DFC /* MuzipApp.swift */; };
 		D57E78CE2A17680A00F35DFC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E78CD2A17680A00F35DFC /* MainView.swift */; };
 		D57E78D02A17680B00F35DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D57E78CF2A17680B00F35DFC /* Assets.xcassets */; };
 		D57E78D32A17680B00F35DFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D57E78D22A17680B00F35DFC /* Preview Assets.xcassets */; };
-		D57E78D52A17680B00F35DFC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E78D42A17680B00F35DFC /* Persistence.swift */; };
+		D57E78D52A17680B00F35DFC /* MuzipDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E78D42A17680B00F35DFC /* MuzipDataManager.swift */; };
 		D57E78D82A17680B00F35DFC /* Muzip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D57E78D62A17680B00F35DFC /* Muzip.xcdatamodeld */; };
 		D57E78E32A17680B00F35DFC /* MuzipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E78E22A17680B00F35DFC /* MuzipTests.swift */; };
 		D57E78ED2A17680B00F35DFC /* MuzipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E78EC2A17680B00F35DFC /* MuzipUITests.swift */; };
@@ -53,12 +57,16 @@
 		D53658C02A2490C900B484F9 /* CircleBeatAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBeatAnimationView.swift; sourceTree = "<group>"; };
 		D53658C22A2497C100B484F9 /* bottomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottomSearchBar.swift; sourceTree = "<group>"; };
 		D53658C62A24F4F800B484F9 /* WaveAnimaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveAnimaion.swift; sourceTree = "<group>"; };
+		A888B9412A18D2B300E89416 /* MusicDB+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MusicDB+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A888B9422A18D2B300E89416 /* MusicDB+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MusicDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A888B9432A18D2B300E89416 /* PlayListDB+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayListDB+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A888B9442A18D2B300E89416 /* PlayListDB+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayListDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D57E78C82A17680A00F35DFC /* Muzip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muzip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57E78CB2A17680A00F35DFC /* MuzipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzipApp.swift; sourceTree = "<group>"; };
 		D57E78CD2A17680A00F35DFC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D57E78CF2A17680B00F35DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D57E78D22A17680B00F35DFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D57E78D42A17680B00F35DFC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		D57E78D42A17680B00F35DFC /* MuzipDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzipDataManager.swift; sourceTree = "<group>"; };
 		D57E78D72A17680B00F35DFC /* Muzip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Muzip.xcdatamodel; sourceTree = "<group>"; };
 		D57E78D92A17680B00F35DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D57E78DE2A17680B00F35DFC /* MuzipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuzipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,8 +178,12 @@
 		D57E78FB2A17687C00F35DFC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D57E78D42A17680B00F35DFC /* Persistence.swift */,
+				A888B9412A18D2B300E89416 /* MusicDB+CoreDataClass.swift */,
+				A888B9422A18D2B300E89416 /* MusicDB+CoreDataProperties.swift */,
+				A888B9432A18D2B300E89416 /* PlayListDB+CoreDataClass.swift */,
+				A888B9442A18D2B300E89416 /* PlayListDB+CoreDataProperties.swift */,
 				D57E78D62A17680B00F35DFC /* Muzip.xcdatamodeld */,
+				D57E78D42A17680B00F35DFC /* MuzipDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -374,6 +386,7 @@
 				D57E79062A17693A00F35DFC /* ViewModelTemp.swift in Sources */,
 				D53658C12A2490C900B484F9 /* CircleBeatAnimationView.swift in Sources */,
 				D57E78D52A17680B00F35DFC /* Persistence.swift in Sources */,
+				D57E78D52A17680B00F35DFC /* MuzipDataManager.swift in Sources */,
 				D57E78CE2A17680A00F35DFC /* MainView.swift in Sources */,
 				D53658C72A24F4F800B484F9 /* WaveAnimaion.swift in Sources */,
 				D57E78CC2A17680A00F35DFC /* MuzipApp.swift in Sources */,
@@ -382,13 +395,17 @@
 				D57E79122A1769D100F35DFC /* ViewExtension.swift in Sources */,
 				D57E790A2A17694E00F35DFC /* RoundedCorner.swift in Sources */,
 				D53658C32A2497C100B484F9 /* bottomSearchBar.swift in Sources */,
+				A888B9462A18D2B400E89416 /* MusicDB+CoreDataProperties.swift in Sources */,
 				D57E79082A17694400F35DFC /* ExtensionTemp.swift in Sources */,
+				A888B9452A18D2B400E89416 /* MusicDB+CoreDataClass.swift in Sources */,
 				D57E79042A17692C00F35DFC /* ReusableTemp.swift in Sources */,
 				D57E79182A17776A00F35DFC /* BubbleShape.swift in Sources */,
 				D57E79102A1769A700F35DFC /* ImageExtension.swift in Sources */,
+				A888B9482A18D2B400E89416 /* PlayListDB+CoreDataProperties.swift in Sources */,
 				D57E790E2A17698F00F35DFC /* ColorExtension.swift in Sources */,
 				D57E79142A1769DB00F35DFC /* ArrayExtension.swift in Sources */,
 				D57E79162A17756700F35DFC /* NetworkMonitor.swift in Sources */,
+				A888B9472A18D2B400E89416 /* PlayListDB+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,7 +564,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Muzip/Preview Content\"";
-				DEVELOPMENT_TEAM = 5N5TS7Y4MA;
+				DEVELOPMENT_TEAM = 22A6RK2943;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -576,7 +593,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Muzip/Preview Content\"";
-				DEVELOPMENT_TEAM = 5N5TS7Y4MA;
+				DEVELOPMENT_TEAM = 22A6RK2943;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
