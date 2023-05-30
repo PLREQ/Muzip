@@ -63,6 +63,22 @@ struct MainView: View {
             if !isShowingBubbleShape && isShowingProgressView {
                 bottomSearchBar()
             }
+            VStack {
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        
+                    }) {
+                        Image(name: .menuIcon)
+                            .resizable()
+                            .frame(width: 50, height: 53)
+                    }
+                    .padding(.leading, 320)
+                    Spacer()
+                }
+                .padding(.top, 6)
+                Spacer()
+            }
         }
         .onChange(of: networkMonitor.isConnected) { _ in
             withAnimation {

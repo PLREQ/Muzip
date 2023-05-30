@@ -56,6 +56,7 @@ struct bottomSearchBar: View {
                     }
                     .padding(.horizontal, 12)
                 }
+                .padding(.bottom, 1)
             }
             .frame(height: isAnimating ? 66 : 0)
             .animation(
