@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D53658C12A2490C900B484F9 /* CircleBeatAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53658C02A2490C900B484F9 /* CircleBeatAnimationView.swift */; };
 		D53658C32A2497C100B484F9 /* bottomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53658C22A2497C100B484F9 /* bottomSearchBar.swift */; };
-		D53658C52A24992700B484F9 /* SearchingMusicAnimaiton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53658C42A24992700B484F9 /* SearchingMusicAnimaiton.swift */; };
+		D53658C72A24F4F800B484F9 /* WaveAnimaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53658C62A24F4F800B484F9 /* WaveAnimaion.swift */; };
 		D57E78CC2A17680A00F35DFC /* MuzipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E78CB2A17680A00F35DFC /* MuzipApp.swift */; };
 		D57E78CE2A17680A00F35DFC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E78CD2A17680A00F35DFC /* MainView.swift */; };
 		D57E78D02A17680B00F35DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D57E78CF2A17680B00F35DFC /* Assets.xcassets */; };
@@ -52,7 +52,7 @@
 /* Begin PBXFileReference section */
 		D53658C02A2490C900B484F9 /* CircleBeatAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBeatAnimationView.swift; sourceTree = "<group>"; };
 		D53658C22A2497C100B484F9 /* bottomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottomSearchBar.swift; sourceTree = "<group>"; };
-		D53658C42A24992700B484F9 /* SearchingMusicAnimaiton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingMusicAnimaiton.swift; sourceTree = "<group>"; };
+		D53658C62A24F4F800B484F9 /* WaveAnimaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveAnimaion.swift; sourceTree = "<group>"; };
 		D57E78C82A17680A00F35DFC /* Muzip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muzip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57E78CB2A17680A00F35DFC /* MuzipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzipApp.swift; sourceTree = "<group>"; };
 		D57E78CD2A17680A00F35DFC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -236,7 +236,7 @@
 				D57E79172A17776A00F35DFC /* BubbleShape.swift */,
 				D53658C02A2490C900B484F9 /* CircleBeatAnimationView.swift */,
 				D53658C22A2497C100B484F9 /* bottomSearchBar.swift */,
-				D53658C42A24992700B484F9 /* SearchingMusicAnimaiton.swift */,
+				D53658C62A24F4F800B484F9 /* WaveAnimaion.swift */,
 			);
 			path = ReusableUI;
 			sourceTree = "<group>";
@@ -375,6 +375,7 @@
 				D53658C12A2490C900B484F9 /* CircleBeatAnimationView.swift in Sources */,
 				D57E78D52A17680B00F35DFC /* Persistence.swift in Sources */,
 				D57E78CE2A17680A00F35DFC /* MainView.swift in Sources */,
+				D53658C72A24F4F800B484F9 /* WaveAnimaion.swift in Sources */,
 				D57E78CC2A17680A00F35DFC /* MuzipApp.swift in Sources */,
 				D57E78D82A17680B00F35DFC /* Muzip.xcdatamodeld in Sources */,
 				D57E790C2A17695700F35DFC /* NetworkTemp.swift in Sources */,
@@ -388,7 +389,6 @@
 				D57E790E2A17698F00F35DFC /* ColorExtension.swift in Sources */,
 				D57E79142A1769DB00F35DFC /* ArrayExtension.swift in Sources */,
 				D57E79162A17756700F35DFC /* NetworkMonitor.swift in Sources */,
-				D53658C52A24992700B484F9 /* SearchingMusicAnimaiton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

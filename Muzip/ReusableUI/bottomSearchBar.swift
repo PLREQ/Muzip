@@ -9,6 +9,7 @@ import SwiftUI
 
 struct bottomSearchBar: View {
     @State private var isAnimating = false
+    @State private var isSearch = true
     
     var body: some View {
         VStack {
@@ -23,13 +24,25 @@ struct bottomSearchBar: View {
                             RoundedRectangle(cornerRadius: 50)
                                 .fill(Color.black)
                             HStack {
-                                Text("노래를 찾고 있어요...")
+                                Text(isSearch ? "노래를 찾고 있어요..." : "잠시 멈춤")
                                     .font(.system(size: 17))
                                     .foregroundColor(.gray050)
                                 Spacer()
-                                
+                                Button(action: {
+                                    isSearch.toggle()
+                                }) {
+                                    if isSearch {
+                                        WaveAnimaionView(color: Color.mzLime, renderingMode: .palette, secondaryColor: Color.black)
+                                            .scaledToFit()
+                                            .frame(width: 50, height: 50)
+                                    } else {
+                                        Image(name: .pause)
+                                            .scaledToFit()
+                                            .frame(width: 50, height: 50)
+                                    }
+                                }
                             }
-                            .padding(.horizontal, 20)
+                            .padding(.leading, 20)
                         }
                         .frame(width: 304, height: 50)
                         ZStack {
