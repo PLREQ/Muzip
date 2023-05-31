@@ -10,6 +10,8 @@ import SwiftUI
 extension Image {
     enum ImageName: String {
         case muzipLogo = "MuzipLogo"
+        case pause = "pause"
+        case menuIcon = "menuIcon"
         
     }
     
