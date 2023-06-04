@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D53658C12A2490C900B484F9 /* CircleBeatAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53658C02A2490C900B484F9 /* CircleBeatAnimationView.swift */; };
-		D53658C32A2497C100B484F9 /* bottomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53658C22A2497C100B484F9 /* bottomSearchBar.swift */; };
-		D53658C72A24F4F800B484F9 /* WaveAnimaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53658C62A24F4F800B484F9 /* WaveAnimaion.swift */; };
 		A888B9452A18D2B400E89416 /* MusicDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888B9412A18D2B300E89416 /* MusicDB+CoreDataClass.swift */; };
 		A888B9462A18D2B400E89416 /* MusicDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888B9422A18D2B300E89416 /* MusicDB+CoreDataProperties.swift */; };
 		A888B9472A18D2B400E89416 /* PlayListDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888B9432A18D2B300E89416 /* PlayListDB+CoreDataClass.swift */; };
 		A888B9482A18D2B400E89416 /* PlayListDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888B9442A18D2B300E89416 /* PlayListDB+CoreDataProperties.swift */; };
+		A888B9762A2A6BB300E89416 /* SearchingPlayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888B9752A2A6BB300E89416 /* SearchingPlayListView.swift */; };
+		A888B9782A2A701E00E89416 /* PlayListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888B9772A2A701E00E89416 /* PlayListCell.swift */; };
+		D53658C12A2490C900B484F9 /* CircleBeatAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53658C02A2490C900B484F9 /* CircleBeatAnimationView.swift */; };
+		D53658C32A2497C100B484F9 /* bottomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53658C22A2497C100B484F9 /* bottomSearchBar.swift */; };
+		D53658C72A24F4F800B484F9 /* WaveAnimaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53658C62A24F4F800B484F9 /* WaveAnimaion.swift */; };
 		D57E78CC2A17680A00F35DFC /* MuzipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E78CB2A17680A00F35DFC /* MuzipApp.swift */; };
 		D57E78CE2A17680A00F35DFC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E78CD2A17680A00F35DFC /* MainView.swift */; };
 		D57E78D02A17680B00F35DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D57E78CF2A17680B00F35DFC /* Assets.xcassets */; };
@@ -54,13 +56,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D53658C02A2490C900B484F9 /* CircleBeatAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBeatAnimationView.swift; sourceTree = "<group>"; };
-		D53658C22A2497C100B484F9 /* bottomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottomSearchBar.swift; sourceTree = "<group>"; };
-		D53658C62A24F4F800B484F9 /* WaveAnimaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveAnimaion.swift; sourceTree = "<group>"; };
 		A888B9412A18D2B300E89416 /* MusicDB+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MusicDB+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A888B9422A18D2B300E89416 /* MusicDB+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MusicDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A888B9432A18D2B300E89416 /* PlayListDB+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayListDB+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A888B9442A18D2B300E89416 /* PlayListDB+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayListDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A888B9752A2A6BB300E89416 /* SearchingPlayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingPlayListView.swift; sourceTree = "<group>"; };
+		A888B9772A2A701E00E89416 /* PlayListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListCell.swift; sourceTree = "<group>"; };
+		D53658C02A2490C900B484F9 /* CircleBeatAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBeatAnimationView.swift; sourceTree = "<group>"; };
+		D53658C22A2497C100B484F9 /* bottomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottomSearchBar.swift; sourceTree = "<group>"; };
+		D53658C62A24F4F800B484F9 /* WaveAnimaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveAnimaion.swift; sourceTree = "<group>"; };
 		D57E78C82A17680A00F35DFC /* Muzip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muzip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57E78CB2A17680A00F35DFC /* MuzipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzipApp.swift; sourceTree = "<group>"; };
 		D57E78CD2A17680A00F35DFC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -221,6 +225,8 @@
 			isa = PBXGroup;
 			children = (
 				D57E78CD2A17680A00F35DFC /* MainView.swift */,
+				A888B9752A2A6BB300E89416 /* SearchingPlayListView.swift */,
+				A888B9772A2A701E00E89416 /* PlayListCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -385,11 +391,12 @@
 			files = (
 				D57E79062A17693A00F35DFC /* ViewModelTemp.swift in Sources */,
 				D53658C12A2490C900B484F9 /* CircleBeatAnimationView.swift in Sources */,
-				D57E78D52A17680B00F35DFC /* Persistence.swift in Sources */,
+				D57E78D52A17680B00F35DFC /* MuzipDataManager.swift in Sources */,
 				D57E78D52A17680B00F35DFC /* MuzipDataManager.swift in Sources */,
 				D57E78CE2A17680A00F35DFC /* MainView.swift in Sources */,
 				D53658C72A24F4F800B484F9 /* WaveAnimaion.swift in Sources */,
 				D57E78CC2A17680A00F35DFC /* MuzipApp.swift in Sources */,
+				A888B9762A2A6BB300E89416 /* SearchingPlayListView.swift in Sources */,
 				D57E78D82A17680B00F35DFC /* Muzip.xcdatamodeld in Sources */,
 				D57E790C2A17695700F35DFC /* NetworkTemp.swift in Sources */,
 				D57E79122A1769D100F35DFC /* ViewExtension.swift in Sources */,
@@ -401,6 +408,7 @@
 				D57E79042A17692C00F35DFC /* ReusableTemp.swift in Sources */,
 				D57E79182A17776A00F35DFC /* BubbleShape.swift in Sources */,
 				D57E79102A1769A700F35DFC /* ImageExtension.swift in Sources */,
+				A888B9782A2A701E00E89416 /* PlayListCell.swift in Sources */,
 				A888B9482A18D2B400E89416 /* PlayListDB+CoreDataProperties.swift in Sources */,
 				D57E790E2A17698F00F35DFC /* ColorExtension.swift in Sources */,
 				D57E79142A1769DB00F35DFC /* ArrayExtension.swift in Sources */,
