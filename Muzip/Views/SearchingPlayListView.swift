@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct SearchingPlayListView: View {
+    
+    // 찾을 음악을 담는 List
+    @State var recordedMusicList = [Music]()
     
     var body: some View {
         VStack{
@@ -18,13 +22,22 @@ struct SearchingPlayListView: View {
             NavigationView {
                 // SearchingPlayList
                 ScrollView {
+                    Button("add music"){
+                        recordedMusicList.append(
+                            Music(index: $recordedMusicList.count,
+                                  title: "타이틀",
+                                  artist: "아티스트",
+                                  musicImageURL: URL(
+                                    string: "https://i.ytimg.com/vi/g5JqPxmYhlo/hqdefault.jpg")!)
+                        )
+                    }
                     LazyVStack{
-                        ForEach(1...10, id: \.self) { count in
+                        ForEach($recordedMusicList, id: \.self) { $music in
                             PlayListCellContent(
                                 url: "url",
-                                title: "title",
+                                title: music.title,
                                 time: "00:00",
-                                artist: "artist"
+                                artist: music.artist
                             ).addButtonActions(
                                 trailingButton:  [.delete],
                                 onClick: { button in
@@ -43,6 +56,10 @@ struct SearchingPlayListView: View {
 
     }
     
+}
+
+private func fetchPlayLists() {
+//    self.playListList = MuzipDataManager.shared.fetch()
 }
 
 struct SearchingPlayListView_Previews: PreviewProvider {

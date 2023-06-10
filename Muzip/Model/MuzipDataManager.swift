@@ -16,6 +16,8 @@ class MuzipDataManager {
     var context: NSManagedObjectContext {
         return container.viewContext
     }
+    let playListModelName: String = "PlayList"
+    let MusicModelName: String = "Music"
 
     private init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "Muzip")
@@ -30,15 +32,41 @@ class MuzipDataManager {
         container.viewContext.automaticallyMergesChangesFromParent = true
     }
     
+    func fetch() -> [NSManagedObject] {
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: playListModelName)
+        
+        let sort = NSSortDescriptor(key: "day", ascending: false)
+        fetchRequest.sortDescriptors = [sort]
+        
+        do {
+            let result = try context.fetch(fetchRequest)
+            return result
+        } catch {
+            print("fetch fail")
+            return []
+        }
+    }
+    
+    
     func deletePlayList(){
         
         saveContext()
     }
 
     // 플레이리스트에 곡들을 추가
-    func addMusicToPlayList(){
+    func addMusicToPlayList(playListObject: NSManagedObject, musics: [MusicData]) -> Bool {
+        for music in musics {
+            let musicObject = NSEntityDescription.insertNewObject(forEntityName: MusicModelName, into: context) as! MusicDB
+            musicObject.title = music.title
+            musicObject.artist = music.artist
+            musicObject.musicImage = music.musicImage
+            
+//            (playListObject as! PlayListDB).addToMusic(musicObject)
+        }
         
+        return saveContext()
     }
+
     
     // 곡 삭제
     func deleteMusic(music: NSManagedObject){
@@ -46,15 +74,18 @@ class MuzipDataManager {
         saveContext()
     }
     
-    func saveContext(){
+    func saveContext() -> Bool{
         if context.hasChanges{
             do {
                 try context.save()
+                return true
             } catch {
                 let nserror = error as NSError
                 fatalError("Unsolved error \(nserror), \(nserror.userInfo)")
+                return false
             }
+        } else {
+            return false
         }
     }
-
 }

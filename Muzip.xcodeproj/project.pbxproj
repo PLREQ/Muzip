@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A81DC8602A344DF600C451ED /* PlayListCellActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81DC85F2A344DF600C451ED /* PlayListCellActionView.swift */; };
+		A81DC8622A34727800C451ED /* Struct+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81DC8612A34727800C451ED /* Struct+.swift */; };
 		A888B9452A18D2B400E89416 /* MusicDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888B9412A18D2B300E89416 /* MusicDB+CoreDataClass.swift */; };
 		A888B9462A18D2B400E89416 /* MusicDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888B9422A18D2B300E89416 /* MusicDB+CoreDataProperties.swift */; };
 		A888B9472A18D2B400E89416 /* PlayListDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888B9432A18D2B300E89416 /* PlayListDB+CoreDataClass.swift */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		A81DC85F2A344DF600C451ED /* PlayListCellActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListCellActionView.swift; sourceTree = "<group>"; };
+		A81DC8612A34727800C451ED /* Struct+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Struct+.swift"; sourceTree = "<group>"; };
 		A888B9412A18D2B300E89416 /* MusicDB+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MusicDB+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A888B9422A18D2B300E89416 /* MusicDB+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MusicDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A888B9432A18D2B300E89416 /* PlayListDB+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayListDB+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				A888B9442A18D2B300E89416 /* PlayListDB+CoreDataProperties.swift */,
 				D57E78D62A17680B00F35DFC /* Muzip.xcdatamodeld */,
 				D57E78D42A17680B00F35DFC /* MuzipDataManager.swift */,
+				A81DC8612A34727800C451ED /* Struct+.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				D57E79082A17694400F35DFC /* ExtensionTemp.swift in Sources */,
 				A888B9452A18D2B400E89416 /* MusicDB+CoreDataClass.swift in Sources */,
 				D57E79042A17692C00F35DFC /* ReusableTemp.swift in Sources */,
+				A81DC8622A34727800C451ED /* Struct+.swift in Sources */,
 				D57E79182A17776A00F35DFC /* BubbleShape.swift in Sources */,
 				D57E79102A1769A700F35DFC /* ImageExtension.swift in Sources */,
 				A888B9782A2A701E00E89416 /* PlayListCellContentView.swift in Sources */,
