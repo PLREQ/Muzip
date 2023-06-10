@@ -32,6 +32,8 @@ class MuzipDataManager {
         container.viewContext.automaticallyMergesChangesFromParent = true
     }
     
+    
+    /// PlayList 불러오기
     func fetch() -> [NSManagedObject] {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: playListModelName)
         
@@ -48,12 +50,12 @@ class MuzipDataManager {
     }
     
     
+    /// 저장된 PlayList 삭제
     func deletePlayList(){
-        
         saveContext()
     }
 
-    // 플레이리스트에 곡들을 추가
+    /// PlayList에 곡들을 추가
     func addMusicToPlayList(playListObject: NSManagedObject, musics: [MusicData]) -> Bool {
         for music in musics {
             let musicObject = NSEntityDescription.insertNewObject(forEntityName: MusicModelName, into: context) as! MusicDB
@@ -63,17 +65,17 @@ class MuzipDataManager {
             
 //            (playListObject as! PlayListDB).addToMusic(musicObject)
         }
-        
         return saveContext()
     }
 
     
-    // 곡 삭제
+    /// 곡 삭제
     func deleteMusic(music: NSManagedObject){
         context.delete(music)
         saveContext()
     }
     
+    ///
     func saveContext() -> Bool{
         if context.hasChanges{
             do {

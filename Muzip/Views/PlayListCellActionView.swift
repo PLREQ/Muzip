@@ -8,6 +8,7 @@
 import SwiftUI
 
 let cellActionButtonWidth: CGFloat = 100
+let gapWidth: CGFloat = 10 /// Cell의 Content와 ActionButton 사이의 넓이 값
 
 enum CellActionButton: Identifiable {
     // Button Type 필요에 따라 추가
@@ -65,7 +66,7 @@ struct SwipeContainerCell: ViewModifier  {
   
     init(trailingButton: [CellActionButton], onClick: @escaping (CellActionButton) -> Void) {
         self.trailingButton = trailingButton
-        minTrailingOffset = CGFloat(trailingButton.count) * cellActionButtonWidth * -1
+        minTrailingOffset = CGFloat(trailingButton.count) * (cellActionButtonWidth + gapWidth) * -1
         self.onClick = onClick
     }
 
@@ -98,18 +99,18 @@ struct SwipeContainerCell: ViewModifier  {
                             // .right -> .none
                             if visibleButton == .right && value.translation.width > 20 {
                                 reset()
-                            } else if visibleButton == .none && offset < -25 {
-                             if offset <= 0 && -90 < offset {
-                                visibleButton = .right
-                                offset = minTrailingOffset
+                            // .none -> .right
+                            } else if visibleButton == .none && offset < -20 {
+                                    visibleButton = .right
+                                    offset = minTrailingOffset
+                                    oldOffset = offset
+                            // 바로 삭제
+                            } else if offset <= -90.0 {
+                                // TODO: 삭제
+                            } else {
+                                reset()
                             }
-                            oldOffset = offset
-                         } else if offset <= -90.0 {
-                            print("cell 삭제")
-                        } else {
-                            reset()
                         }
-                     }
                     })
                 )
             
@@ -122,8 +123,7 @@ struct SwipeContainerCell: ViewModifier  {
                                 withAnimation {
                                     reset()
                                 }
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.10) {
-                                    // Cell 삭제
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                                     onClick(buttons)
                                 }
                             }, label: {

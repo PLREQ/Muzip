@@ -8,10 +8,10 @@
 import SwiftUI
 import CoreData
 
+//@available(iOS 14.0, *)
 struct SearchingPlayListView: View {
     
-    // 찾을 음악을 담는 List
-    @State var recordedMusicList = [Music]()
+    @AppStorage("recordedMusicList") var recordedMusicList: [Music] = []
     
     var body: some View {
         VStack{
@@ -22,9 +22,10 @@ struct SearchingPlayListView: View {
             NavigationView {
                 // SearchingPlayList
                 ScrollView {
+                    /// 더미 데이터 생성용 버튼입니다. Search 기능이 추가되면 지울 예정입니다.
                     Button("add music"){
                         recordedMusicList.append(
-                            Music(index: $recordedMusicList.count,
+                            Music(id: UUID(),
                                   title: "타이틀",
                                   artist: "아티스트",
                                   musicImageURL: URL(
@@ -40,14 +41,17 @@ struct SearchingPlayListView: View {
                                 artist: music.artist
                             ).addButtonActions(
                                 trailingButton:  [.delete],
-                                onClick: { button in
-                                    print("clicked: \(button)")
+                                onClick: { _ in
+                                    recordedMusicList.removeAll(where: { $0.id == music.id })
                                 }
                             )
                         }
                     }
                     Spacer()
                 }
+                // NavigationBarTitle 가리기
+                .navigationBarTitle("", displayMode: .automatic)
+                .navigationBarHidden(true)
             }.frame(width: UIScreen.main.bounds.width)
             
             // search bar 높이
@@ -55,11 +59,6 @@ struct SearchingPlayListView: View {
         }
 
     }
-    
-}
-
-private func fetchPlayLists() {
-//    self.playListList = MuzipDataManager.shared.fetch()
 }
 
 struct SearchingPlayListView_Previews: PreviewProvider {
@@ -67,3 +66,4 @@ struct SearchingPlayListView_Previews: PreviewProvider {
         SearchingPlayListView()
     }
 }
+

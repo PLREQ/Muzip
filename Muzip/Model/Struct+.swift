@@ -8,8 +8,7 @@
 import Foundation
 
 struct Music: Codable, Hashable {
-    // MARK: 임시 ID
-    var index: Int
+    var id: UUID
     var title: String
     var artist: String
     var musicImageURL: URL

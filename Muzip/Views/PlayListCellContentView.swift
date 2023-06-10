@@ -26,7 +26,7 @@ struct PlayListCellContent: View {
                         // TODO: Font Size Extension
                         Text(title).bold().font(.subheadline)
                         Text(time).font(.subheadline)
-                        Spacer().frame(height: 4)
+                        Spacer().frame(height: 8)
                         Text(artist).font(.subheadline)
                     }
                     Spacer()
