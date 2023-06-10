@@ -8,67 +8,37 @@
 import SwiftUI
 
 struct SearchingPlayListView: View {
+    
     var body: some View {
         VStack{
-            Rectangle().foregroundColor(.none).frame(height: 70)
-            List {
-
-                ForEach((0...5), id: \.self) { index in
-                    
-                    // cell
-                    NavigationLink {
-                        PlayListCell(url: "https://www.google.co.kr/url?sa=i&url=https%3A%2F%2Fm.dongascience.com%2Fnews.php%3Fidx%3D32697&psig=AOvVaw3oqmmRcW4w6jtklu--vnxJ&ust=1685818427911000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIjuiJahpf8CFQAAAAAdAAAAABAE", title: "test", time: "test", artist: "test")
-                        //                        nextView(index: index)
-                    } label: {
-                        Text("\(index)")
-                    }.foregroundColor(.blue)
-                    .swipeActions {
-                        Button("Order") {
-                            print("Awesome!")
+            
+            // 상단 투명 뷰
+            Rectangle().foregroundColor(.clear).frame(height: 100)
+            
+            NavigationView {
+                // SearchingPlayList
+                ScrollView {
+                    LazyVStack{
+                        ForEach(1...10, id: \.self) { count in
+                            PlayListCellContent(
+                                url: "url",
+                                title: "title",
+                                time: "00:00",
+                                artist: "artist"
+                            ).addButtonActions(
+                                trailingButton:  [.delete],
+                                onClick: { button in
+                                    print("clicked: \(button)")
+                                }
+                            )
                         }
-                        .tint(.green)
-                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                     }
-                    .background(.gray)
-                    .listRowSeparatorTint(.black)
+                    Spacer()
                 }
-                        
-                        //                Text("\(index)")
-                
-              PlayListCell(url: "https://www.google.co.kr/url?sa=i&url=https%3A%2F%2Fm.dongascience.com%2Fnews.php%3Fidx%3D32697&psig=AOvVaw3oqmmRcW4w6jtklu--vnxJ&ust=1685818427911000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIjuiJahpf8CFQAAAAAdAAAAABAE", title: "test", time: "test", artist: "test").swipeActions {
-                  
-                  Button(action: {
-                      
-                          print("Awesome!")
-                  }, label: {
-//                      RoundedRectangle(cornerRadius: 10.0)
-//                      .foregroundColor(.red)
-                  })
-                  .tint(.blue)
-              }
-                
-                PlayListCell(url: "https://www.google.co.kr/url?sa=i&url=https%3A%2F%2Fm.dongascience.com%2Fnews.php%3Fidx%3D32697&psig=AOvVaw3oqmmRcW4w6jtklu--vnxJ&ust=1685818427911000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIjuiJahpf8CFQAAAAAdAAAAABAE", title: "test", time: "test", artist: "test")
-                    .swipeActions {
-                        
-                        Button(action: {
-                            print("Awesome!")
-                        }, label: {
-                            RoundedRectangle(cornerRadius: 10.0)
-                                .foregroundColor(.pink)
-                        })
-//
-//                        Button("Order") {
-//
-//
-//                        }
-//                        .tint(.black)
-                    }
-            }
-            .frame(width: UIScreen.main.bounds.width)
-            .edgesIgnoringSafeArea(.all)
-            .listStyle(.plain)
-            .background(.black)
-//            .scrollContentBackground(.hidden)
+            }.frame(width: UIScreen.main.bounds.width)
+            
+            // search bar 높이
+            Spacer().frame(height: 70)
         }
 
     }
