@@ -10,7 +10,7 @@ import SwiftUI
 struct bottomSearchBar: View {
     @State private var isAnimating = false
     @State private var isSearch = true
-    @State private var showingSaveAlert = false
+    @State private var isShowingSaveAlert = false
     
     var body: some View {
         VStack {
@@ -52,13 +52,13 @@ struct bottomSearchBar: View {
                                 .frame(width: 50, height: 50)
                             
                             Button(action: {
-                                showingSaveAlert.toggle()
+                                isShowingSaveAlert.toggle()
                             }, label: {
                                 Text("X")
                                     .font(.system(size: 25, weight: .bold))
                                     .foregroundColor(.white)
                             })
-                            .alert("음악 탐색 종료하기", isPresented: $showingSaveAlert) {
+                            .alert("음악 탐색 종료하기", isPresented: $isShowingSaveAlert) {
                                 Button("저장하기",action: {}).keyboardShortcut(.defaultAction)
                                 Button("취소하기", role: .cancel, action: {})
                                 Button("저장하지 않고 나가기", role: .destructive, action: {})
