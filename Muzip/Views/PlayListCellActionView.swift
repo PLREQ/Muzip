@@ -95,11 +95,10 @@ struct SwipeContainerCell: ViewModifier  {
                     })
                     .onEnded({ value in
                         withAnimation {
-                            // TODO: offset 값 조절
-                            // .right -> .none
+                            /// .right -> .none
                             if visibleButton == .right && value.translation.width > 20 {
                                 reset()
-                            // .none -> .right
+                            /// .none -> .right
                             } else if visibleButton == .none && offset < -20 {
                                     visibleButton = .right
                                     offset = minTrailingOffset
