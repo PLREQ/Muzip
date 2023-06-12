@@ -1,9 +1,9 @@
 //
-//  CustomCell.swift
+//  PlayListCellActionView.swift
 //  Muzip
 //
 //  Created by Yeni Hwang on 2023/06/10.
-//
+//  PlayList Cell의 우측 Swipe Action 영역 입니다.
 
 import SwiftUI
 
@@ -41,13 +41,6 @@ struct PlayListCellActionView: View {
         }
     }
 }
-
-extension View {
-    func addButtonActions(trailingButton: [CellActionButton], onClick: @escaping (CellActionButton) -> Void) -> some View {
-        self.modifier(SwipeContainerCell(trailingButton: trailingButton, onClick: onClick))
-    }
-}
-
 
 struct SwipeContainerCell: ViewModifier  {
     

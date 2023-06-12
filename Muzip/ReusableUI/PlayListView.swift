@@ -8,8 +8,10 @@
 import SwiftUI
 import CoreData
 
+// TODO: PlayList마다 재사용할 수 있도록 case(Searching, Saved) 분리 필요. (현재 Searching만 구현)
+
 //@available(iOS 14.0, *)
-struct SearchingPlayListView: View {
+struct PlayListView: View {
     
     @AppStorage("recordedMusicList") var recordedMusicList: [Music] = []
     
@@ -22,7 +24,7 @@ struct SearchingPlayListView: View {
             NavigationView {
                 // SearchingPlayList
                 ScrollView {
-                    /// 더미 데이터 생성용 버튼입니다. Search 기능이 추가되면 지울 예정입니다.
+                    /// ================== 더미 데이터 생성용 버튼 ==================
                     Button("add music"){
                         recordedMusicList.append(
                             Music(id: UUID(),
@@ -32,6 +34,7 @@ struct SearchingPlayListView: View {
                                     string: "https://i.ytimg.com/vi/g5JqPxmYhlo/hqdefault.jpg")!)
                         )
                     }
+                    /// ===================================================
                     LazyVStack{
                         ForEach($recordedMusicList, id: \.self) { $music in
                             PlayListCellContent(
@@ -61,9 +64,9 @@ struct SearchingPlayListView: View {
     }
 }
 
-struct SearchingPlayListView_Previews: PreviewProvider {
+struct PlayListView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchingPlayListView()
+        PlayListView()
     }
 }
 

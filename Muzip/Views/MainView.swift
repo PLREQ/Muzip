@@ -64,7 +64,7 @@ struct MainView: View {
             }
             // SearchingPlayListView
             if !isShowingBubbleShape && !isEmptySearchingPlayList {
-                SearchingPlayListView()
+                PlayListView()
             }
             if !isShowingBubbleShape && isShowingProgressView {
                 bottomSearchBar()

@@ -1,9 +1,9 @@
 //
-//  PlayListCell.swift
+//  PlayListCellContent.swift
 //  Muzip
 //
 //  Created by Yeni Hwang on 2023/06/03.
-//
+//  PlayList Cell의 정보가 담겨있는 Content 영역 입니다.
 
 import SwiftUI
 
