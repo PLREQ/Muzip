@@ -12,6 +12,7 @@ struct MainView: View {
     @State private var bubbleShapeText = ""
     @State private var isShowingProgressView = false
     @State private var isShowingBubbleShape = false
+    @State private var isEmptySearchingPlayList = true
     
     private let text = "뮤집을 눌러 찾고 싶은 노래를 알려주세요"
     
@@ -49,6 +50,7 @@ struct MainView: View {
                     .onTapGesture {
                         withAnimation {
                             isShowingBubbleShape.toggle()
+                            isEmptySearchingPlayList.toggle()
                         }
                     }
             }
@@ -59,6 +61,10 @@ struct MainView: View {
                         .frame(width: 22, height: 22)
                         .padding(.top, 247)
                 }
+            }
+            // SearchingPlayListView
+            if !isShowingBubbleShape && !isEmptySearchingPlayList {
+                PlayListView()
             }
             if !isShowingBubbleShape && isShowingProgressView {
                 bottomSearchBar()

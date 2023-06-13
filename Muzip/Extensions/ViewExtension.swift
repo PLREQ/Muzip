@@ -19,3 +19,10 @@ extension View {
     }
 }
 
+
+// PlayList Cell에서 SwipeAction Button을 추가해주는 Extension입니다.
+extension View {
+    func addButtonActions(trailingButton: [CellActionButton], onClick: @escaping (CellActionButton) -> Void) -> some View {
+        self.modifier(SwipeContainerCell(trailingButton: trailingButton, onClick: onClick))
+    }
+}

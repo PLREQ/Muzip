@@ -9,11 +9,12 @@ import SwiftUI
 
 @main
 struct MuzipApp: App {
-    let persistenceController = PersistenceController.shared
+    let persistenceController = MuzipDataManager.shared
 
     var body: some Scene {
         WindowGroup {
             MainView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
